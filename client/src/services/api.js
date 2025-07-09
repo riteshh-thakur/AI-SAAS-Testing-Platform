@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // ✅ Set base URL
 const API = axios.create({
-  baseURL: 'https://ai-saas-testing-platform.onrender.com',
+  baseURL: 'http://localhost:5000',
   headers: {
     'Content-Type': 'application/json',
   },

@@ -12,7 +12,7 @@ const TestDetailsPage = () => {
   useEffect(() => {
     const fetchTestDetails = async () => {
       try {
-        const res = await axios.get(`https://ai-saas-testing-platform.onrender.com/results/${id}`);
+        const res = await axios.get(`http://localhost:5000/results/${id}`);
         setTestData(res.data);
       } catch (err) {
         console.error('Failed to fetch test details:', err);
